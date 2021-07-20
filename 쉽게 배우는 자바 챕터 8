@@ -1,0 +1,40 @@
+public class string_app {
+
+	public static void main(String[] args) {
+		System.out.println("hello world");//string문자열
+		System.out.println('a');//character 한 글자
+		System.out.println("Hello\n World");//줄바꾸기
+		System.out.println("Hello \"World\"");//escape코드
+		System.out.println("Hello World".length());
+		System.out.println("Hello,leezche...".replace("leezche","Z0"));
+		
+		//variable
+		int a=1;//a=1은 안됨
+		double b=1.32;//실수
+		String c="Hello World";
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		//변수 지정의 효용
+        String name = "leezche";
+        System.out.println("Hello, "+name+" ... "+name+" ... egoing ... bye");
+         
+        double VAT = 10.0;//코드가 가지고 있는 의미를 쉽게 파악할 수 있음  
+        System.out.println(VAT);
+        
+        int d=(int) 1.1;// double을 int로 데이터 타입을 변경해줌.
+        System.out.println("d="+d);
+        
+        int a1=1;
+        int a2=2;
+        System.out.println(a1/a2);//0으로 출력됨
+ 
+        double d1=1;
+        double d2=2;
+        System.out.println(d1/d2);//0.5로 출력됨
+        
+        String e = Integer.toString(1);//int를 string으로 캐스팅함
+        System.out.println("Class of e = "+e.getClass());//e의 데이터 타입을 출력함     
+	}
+
+}

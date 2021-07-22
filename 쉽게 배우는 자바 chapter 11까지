@@ -1,12 +1,16 @@
+import org.opentutorials.iot.DimmingLights;
 import org.opentutorials.iot.Elevator;
+import org.opentutorials.iot.Lighting;
+import org.opentutorials.iot.Security;
+ 
 import org.opentutorials.iot.Lighting;
 import org.opentutorials.iot.Security;
  
 public class java_iot {
  
     public static void main(String[] args) {
-         
-        String id = "JAVA APT 507";
+    	String id = args[0];
+    	String bright = args[1];
          
         // Elevator call 
         Elevator myElevator = new Elevator(id);//myElevator라는 변수의 데이터 타입은 Elevator
@@ -23,6 +27,11 @@ public class java_iot {
          
         Lighting floorLamp = new Lighting(id+" / floorLamp");
         floorLamp.on();
+        
+        DimmingLights moodLamp = new DimmingLights(id+" moodLamp");
+        moodLamp.setBright(Double.parseDouble(bright));
+        moodLamp.on();
+        
         String name = "boostcourse";
 
         System.out.println(name);
